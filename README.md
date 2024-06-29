@@ -46,7 +46,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Built with
 
-- NextJS 14
+- Next.js
 - TailWindCSS
 - shadcn/ui
 - Mobile-first workflow
