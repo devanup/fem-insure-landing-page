@@ -23,7 +23,7 @@ const Header = () => {
 	}, []);
 
 	return (
-		<header className='md:px-20 px-4 py-4 flex relative justify-between items-center'>
+		<header className='md:px-20 px-4 py-4 flex relative justify-between items-center bg-white z-10'>
 			<Link className='uppercase font-bold text-xl' href='/'>
 				<img src='/logo.svg' alt='logo' />
 			</Link>
