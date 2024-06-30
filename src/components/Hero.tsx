@@ -39,8 +39,8 @@ const Hero = () => {
 					</h1>
 					<p className='font-normal'>
 						Get your life insurance coverage easier and faster. We blend our
-						expertise and technology to help you find the plan that's right for
-						you. Ensure you and your loved ones are protected.
+						expertise and technology to help you find the plan that&apos;s right
+						for you. Ensure you and your loved ones are protected.
 					</p>
 					<Button className='w-fit border-2 border-white bg-transparent hover:bg-purple-900 hover:bg-opacity-20 md:hover:bg-white rounded-none uppercase font-semibold hover:text-black'>
 						View Plans
