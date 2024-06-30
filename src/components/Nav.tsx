@@ -17,7 +17,7 @@ const Nav = ({ menuOpen }: { menuOpen: boolean } = { menuOpen: false }) => {
 		<nav
 			className={`uppercase md:flex ${
 				menuOpen ? mobileNavClasses : 'hidden'
-			} md:flex-row md:justify-between items-center text-sm md:space-x-6 space-x-0 md:space-y-0 space-y-6 transition-colors tracking-wide`}
+			} md:pt-0 pt-16 md:flex-row md:justify-between items-center text-sm md:space-x-6 space-x-0 md:space-y-0 space-y-6 transition-colors tracking-wide`}
 		>
 			{navItems.map((item, index) => {
 				return item.isButton ? (
@@ -44,7 +44,7 @@ const Nav = ({ menuOpen }: { menuOpen: boolean } = { menuOpen: false }) => {
 				);
 			})}
 
-			<div className='absolute -bottom-14 right-0 left-0'>
+			<div className='absolute bottom-10 right-0 left-0'>
 				<img
 					src='/bg-pattern-mobile-nav.svg'
 					alt='bg-pattern-mobile-nav'
