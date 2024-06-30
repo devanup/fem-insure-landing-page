@@ -9,7 +9,9 @@ const BottomBanner = () => {
 	return (
 		<section className='mt-72'>
 			<div className='hidden md:block w-40 h-[1px] bg-[#C396C6] mb-8'></div>
-			<h1 className={`text-6xl ${serifDisplay.className}`}>We're different</h1>
+			<h1 className={`text-6xl ${serifDisplay.className}`}>
+				We&apos;re different
+			</h1>
 		</section>
 	);
 };
