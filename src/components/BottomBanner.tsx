@@ -7,7 +7,7 @@ const serifDisplay = DM_Serif_Display({
 
 const BottomBanner = () => {
 	return (
-		<section className='mt-72'>
+		<section className='mt-64'>
 			<div className='hidden md:block w-40 h-[1px] bg-[#C396C6] mb-8'></div>
 			<h1 className={`text-6xl ${serifDisplay.className}`}>
 				We&apos;re different

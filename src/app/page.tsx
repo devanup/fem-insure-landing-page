@@ -3,7 +3,8 @@ import Header from '@/components/Header';
 import { Karla } from 'next/font/google';
 import BottomBanner from '@/components/BottomBanner';
 
-const karla = Karla({ subsets: ['latin'], weight: '400' });
+// const karla = Karla({ subsets: ['latin'], weight: '400' });
+const karla = Karla({ subsets: ['latin'], weight: ['400', '200'] });
 
 export default function Home() {
 	return (

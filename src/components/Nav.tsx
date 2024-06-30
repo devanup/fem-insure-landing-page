@@ -28,7 +28,7 @@ const Nav = ({ menuOpen }: { menuOpen: boolean } = { menuOpen: false }) => {
 					>
 						<Button
 							variant='outline'
-							className='border-2 md:border-black border-white bg-transparent hover:bg-purple-900 hover:bg-opacity-20 md:hover:bg-black rounded-none uppercase font-semibold hover:text-white md:w-auto w-full'
+							className='border-2 md:border-black border-white bg-transparent hover:bg-black hover:border-black rounded-none uppercase font-semibold hover:text-white md:w-auto w-full'
 						>
 							{item.title}
 						</Button>
