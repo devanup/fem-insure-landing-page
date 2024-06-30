@@ -10,7 +10,7 @@ const Hero = () => {
 	return (
 		<section
 			id='hero'
-			className='bg-[#2D2641] text-white md:px-20 px-0 h-auto md:h-[45vh] relative'
+			className='bg-[#2D2641] text-white md:px-20 px-0 h-auto md:h-[85vh] relative'
 		>
 			{/* top-right pattern svg */}
 			<div className='absolute -top-10 right-0'>
@@ -47,7 +47,7 @@ const Hero = () => {
 					</Button>
 				</div>
 				{/* hero-right */}
-				<div className='flex-shrink-0 md:w-[50%] w-full mx-auto md:mt-28'>
+				<div className='flex-shrink-0 md:ml-10 ml-0 md:w-[300px] lg:w-[40%] w-full mx-auto md:mt-28'>
 					<img
 						className='w-full h-auto'
 						src='/image-intro-desktop.jpg'
