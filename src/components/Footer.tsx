@@ -2,7 +2,18 @@ import Link from 'next/link';
 import React from 'react';
 import { Button } from './ui/button';
 
-const footerLinks = [
+interface FooterLink {
+	title: string;
+	href: string;
+	icon?: string;
+}
+
+interface FooterSection {
+	section: string;
+	links: FooterLink[];
+}
+
+const footerLinks: FooterSection[] = [
 	{
 		section: 'Our Company',
 		links: [
@@ -98,7 +109,7 @@ const Footer = () => {
 						socialLinks.links.map((link, index) => (
 							<Link key={index} href={link.href}>
 								<Button variant='ghost' className='' size='icon'>
-									{getIcon(link.icon)}
+									{link.icon && getIcon(link.icon)}
 								</Button>
 							</Link>
 						))}
