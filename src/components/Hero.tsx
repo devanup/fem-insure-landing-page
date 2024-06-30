@@ -32,9 +32,9 @@ const Hero = () => {
 			{/* hero main content */}
 			<div className='flex flex-col-reverse md:flex-row justify-between'>
 				{/* hero-left */}
-				<div className='flex flex-col relative md:items-start items-center space-y-6 z-10 md:w-1/2 w-full mx-auto my-0 md:my-24 md:pr-8 md:px-0 px-10 md:py-0 py-24 md:text-left text-center'>
+				<div className='flex flex-col relative md:items-start items-center space-y-6 md:w-1/2 w-full mx-auto my-0 md:my-24 md:pr-8 md:px-0 px-10 md:py-0 py-24 md:text-left text-center'>
 					{/* bg-pattern-intro-left-mobile */}
-					<div className='absolute top-0 left-0 -z-10 md:hidden block '>
+					<div className='absolute top-0 left-0 md:hidden block '>
 						<img
 							src='/bg-pattern-intro-left-mobile.svg'
 							alt='bg-pattern-intro-left-mobile'
@@ -42,7 +42,7 @@ const Hero = () => {
 						/>
 					</div>
 					{/* bg-pattern-intro-right-mobile */}
-					<div className='absolute -bottom-48 right-0 -z-10 md:hidden block '>
+					<div className='absolute -bottom-48 right-0 md:hidden block '>
 						<img
 							src='/bg-pattern-intro-right-mobile.svg'
 							alt='bg-pattern-intro-right-mobile'

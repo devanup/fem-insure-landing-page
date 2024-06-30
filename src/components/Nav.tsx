@@ -11,13 +11,13 @@ const navItems = [
 
 const Nav = ({ menuOpen }: { menuOpen: boolean } = { menuOpen: false }) => {
 	const mobileNavClasses =
-		'flex flex-col absolute top-[72px] left-0 w-full px-4 py-8 bg-[#2D2641]';
+		'flex flex-col absolute top-[72px] left-0 w-full h-[100vh] px-6 py-8 bg-[#2C2830] overflow-hidden !z-30';
 
 	return (
 		<nav
 			className={`uppercase md:flex ${
 				menuOpen ? mobileNavClasses : 'hidden'
-			} md:flex-row justify-between items-center text-sm md:space-x-6 space-x-0 md:space-y-0 space-y-4 transition-colors tracking-wide`}
+			} md:flex-row md:justify-between items-center text-sm md:space-x-6 space-x-0 md:space-y-0 space-y-6 transition-colors tracking-wide`}
 		>
 			{navItems.map((item, index) => {
 				return item.isButton ? (
@@ -43,6 +43,14 @@ const Nav = ({ menuOpen }: { menuOpen: boolean } = { menuOpen: false }) => {
 					</Link>
 				);
 			})}
+
+			<div className='absolute -bottom-14 right-0 left-0'>
+				<img
+					src='/bg-pattern-mobile-nav.svg'
+					alt='bg-pattern-mobile-nav'
+					className='w-full block md:hidden'
+				/>
+			</div>
 		</nav>
 	);
 };

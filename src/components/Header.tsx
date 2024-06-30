@@ -22,8 +22,20 @@ const Header = () => {
 		};
 	}, []);
 
+	useEffect(() => {
+		if (menuOpen) {
+			document.body.classList.add('overflow-hidden');
+		} else {
+			document.body.classList.remove('overflow-hidden');
+		}
+
+		return () => {
+			document.body.classList.remove('overflow-hidden');
+		};
+	}, [menuOpen]);
+
 	return (
-		<header className='md:px-20 px-4 py-4 flex relative justify-between items-center bg-white z-10'>
+		<header className='md:px-20 px-6 py-4 flex relative justify-between items-center bg-white z-10'>
 			<Link className='uppercase font-bold text-xl' href='/'>
 				<img src='/logo.svg' alt='logo' />
 			</Link>
